@@ -67,84 +67,408 @@ taken across the entire measurement window for that participant and that activit
 #Section 2: Code Book
 The information below lists all variables included in the tidy dataset
 
-* Variable Name: Participant	  * Column Number: 1	  * Variable Type: Numeric	  * Unit: Integer	  * Description: Participant ID
-* Variable Name: Activity.Code	  * Column Number: 2	  * Variable Type: Text	  * Unit: Text	  * Description: Activity Description
-* Variable Name: tBodyAcc-mean()-X	  * Column Number: 3	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis body acceleration means recorded from the accelerometer
-* Variable Name: tBodyAcc-mean()-Y	  * Column Number: 4	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis body acceleration means recorded from the accelerometer
-* Variable Name: tBodyAcc-mean()-Z	  * Column Number: 5	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis body acceleration means recorded from the accelerometer
-* Variable Name: tBodyAcc-std()-X	  * Column Number: 6	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis body acceleration standard deviations recorded from the accelerometer
-* Variable Name: tBodyAcc-std()-Y	  * Column Number: 7	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis body acceleration standard deviations recorded from the accelerometer
-* Variable Name: tBodyAcc-std()-Z	  * Column Number: 8	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis body acceleration standard deviations recorded from the accelerometer
-* Variable Name: tGravityAcc-mean()-X	  * Column Number: 9	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis gravity acceleration means recorded from the accelerometer
-* Variable Name: tGravityAcc-mean()-Y	  * Column Number: 10	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis gravity acceleration means recorded from the accelerometer
-* Variable Name: tGravityAcc-mean()-Z	  * Column Number: 11	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis gravity acceleration means recorded from the accelerometer
-* Variable Name: tGravityAcc-std()-X	  * Column Number: 12	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis gravity acceleration standard deviations recorded from the accelerometer
-* Variable Name: tGravityAcc-std()-Y	  * Column Number: 13	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis gravity acceleration standard deviations recorded from the accelerometer
-* Variable Name: tGravityAcc-std()-Z	  * Column Number: 14	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis gravity acceleration standard deviations recorded from the accelerometer
-* Variable Name: tBodyAccJerk-mean()-X	  * Column Number: 15	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis body jerk signal means recorded
-* Variable Name: tBodyAccJerk-mean()-Y	  * Column Number: 16	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis body jerk signal means recorded
-* Variable Name: tBodyAccJerk-mean()-Z	  * Column Number: 17	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis body jerk signal means recorded
-* Variable Name: tBodyAccJerk-std()-X	  * Column Number: 18	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis body jerk signal standard deviations recorded
-* Variable Name: tBodyAccJerk-std()-Y	  * Column Number: 19	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis body jerk signal standard deviations recorded
-* Variable Name: tBodyAccJerk-std()-Z	  * Column Number: 20	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis body jerk signal standard deviations recorded
-* Variable Name: tBodyGyro-mean()-X	  * Column Number: 21	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis gyro jerk signal means recorded
-* Variable Name: tBodyGyro-mean()-Y	  * Column Number: 22	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis gyro jerk signal means recorded
-* Variable Name: tBodyGyro-mean()-Z	  * Column Number: 23	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis gyro jerk signal means recorded
-* Variable Name: tBodyGyro-std()-X	  * Column Number: 24	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all X-axis gyro jerk signal standard deviations recorded
-* Variable Name: tBodyGyro-std()-Y	  * Column Number: 25	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Y-axis gyro jerk signal standard deviations recorded
-* Variable Name: tBodyGyro-std()-Z	  * Column Number: 26	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all Z-axis gyro jerk signal standard deviations recorded
-* Variable Name: tBodyGyroJerk-mean()-X	  * Column Number: 27	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal means recorded for the X axis
-* Variable Name: tBodyGyroJerk-mean()-Y	  * Column Number: 28	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal means recorded for the Y axis
-* Variable Name: tBodyGyroJerk-mean()-Z	  * Column Number: 29	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal means recorded for the Z axis
-* Variable Name: tBodyGyroJerk-std()-X	  * Column Number: 30	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the X axis
-* Variable Name: tBodyGyroJerk-std()-Y	  * Column Number: 31	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the Y axis
-* Variable Name: tBodyGyroJerk-std()-Z	  * Column Number: 32	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the Z axis
-* Variable Name: tBodyAccMag-mean()	  * Column Number: 33	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyAccMag signal means recorded
-* Variable Name: tBodyAccMag-std()	  * Column Number: 34	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyAccMag signal standard deviations recorded
-* Variable Name: tGravityAccMag-mean()	  * Column Number: 35	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tGravityAccMag signal means recorded
-* Variable Name: tGravityAccMag-std()	  * Column Number: 36	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tGravityAccMag signal standard deviations recorded
-* Variable Name: tBodyAccJerkMag-mean()	  * Column Number: 37	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyAccJerkMag signal means recorded
-* Variable Name: tBodyAccJerkMag-std()	  * Column Number: 38	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyAccJerkMag signal standard deviations recorded
-* Variable Name: tBodyGyroMag-mean()	  * Column Number: 39	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroMag signal means recorded
-* Variable Name: tBodyGyroMag-std()	  * Column Number: 40	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroMag signal standard deviations recorded
-* Variable Name: tBodyGyroJerkMag-mean()	  * Column Number: 41	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerkMag signal means recorded
-* Variable Name: tBodyGyroJerkMag-std()	  * Column Number: 42	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all tBodyGyroJerkMag signal standard deviations recorded
-* Variable Name: fBodyAcc-mean()-X	  * Column Number: 43	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal means recorded for the X axis
-* Variable Name: fBodyAcc-mean()-Y	  * Column Number: 44	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal means recorded for the Y axis
-* Variable Name: fBodyAcc-mean()-Z	  * Column Number: 45	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal means recorded for the Z axis
-* Variable Name: fBodyAcc-std()-X	  * Column Number: 46	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the X axis
-* Variable Name: fBodyAcc-std()-Y	  * Column Number: 47	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the Y axis
-* Variable Name: fBodyAcc-std()-Z	  * Column Number: 48	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the Z axis
-* Variable Name: fBodyAcc-meanFreq()-X	  * Column Number: 49	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the X axis
-* Variable Name: fBodyAcc-meanFreq()-Y	  * Column Number: 50	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the Y axis
-* Variable Name: fBodyAcc-meanFreq()-Z	  * Column Number: 51	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the Z axis
-* Variable Name: fBodyAccJerk-mean()-X	  * Column Number: 52	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal means recorded for the X axis
-* Variable Name: fBodyAccJerk-mean()-Y	  * Column Number: 53	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal means recorded for the Y axis
-* Variable Name: fBodyAccJerk-mean()-Z	  * Column Number: 54	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal means recorded for the Z axis
-* Variable Name: fBodyAccJerk-std()-X	  * Column Number: 55	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the X axis
-* Variable Name: fBodyAccJerk-std()-Y	  * Column Number: 56	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the Y axis
-* Variable Name: fBodyAccJerk-std()-Z	  * Column Number: 57	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the Z axis
-* Variable Name: fBodyAccJerk-meanFreq()-X	  * Column Number: 58	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the X axis
-* Variable Name: fBodyAccJerk-meanFreq()-Y	  * Column Number: 59	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the Y axis
-* Variable Name: fBodyAccJerk-meanFreq()-Z	  * Column Number: 60	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the Z axis
-* Variable Name: fBodyGyro-mean()-X	  * Column Number: 61	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal means recorded for the X axis
-* Variable Name: fBodyGyro-mean()-Y	  * Column Number: 62	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal means recorded for the Y axis
-* Variable Name: fBodyGyro-mean()-Z	  * Column Number: 63	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal means recorded for the Z axis
-* Variable Name: fBodyGyro-std()-X	  * Column Number: 64	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the X axis
-* Variable Name: fBodyGyro-std()-Y	  * Column Number: 65	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the Y axis
-* Variable Name: fBodyGyro-std()-Z	  * Column Number: 66	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the Z axis
-* Variable Name: fBodyGyro-meanFreq()-X	  * Column Number: 67	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the X axis
-* Variable Name: fBodyGyro-meanFreq()-Y	  * Column Number: 68	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the Y axis
-* Variable Name: fBodyGyro-meanFreq()-Z	  * Column Number: 69	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the Z axis
-* Variable Name: fBodyAccMag-mean()	  * Column Number: 70	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccMag signal means recorded
-* Variable Name: fBodyAccMag-std()	  * Column Number: 71	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccMag signal standard deviations recorded
-* Variable Name: fBodyAccMag-meanFreq()	  * Column Number: 72	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyAccMag signal mean frequencies recorded
-* Variable Name: fBodyBodyAccJerkMag-mean()	  * Column Number: 73	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyAccJerkMag signal means recorded
-* Variable Name: fBodyBodyAccJerkMag-std()	  * Column Number: 74	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyAccJerkMag signal standard deviations recorded
-* Variable Name: fBodyBodyAccJerkMag-meanFreq()	  * Column Number: 75	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyAccJerkMag signal mean frequencies recorded
-* Variable Name: fBodyBodyGyroMag-mean()	  * Column Number: 76	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroMag signal means recorded
-* Variable Name: fBodyBodyGyroMag-std()	  * Column Number: 77	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroMag signal standard deviations recorded
-* Variable Name: fBodyBodyGyroMag-meanFreq()	  * Column Number: 78	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroMag signal mean frequencies recorded
-* Variable Name: fBodyBodyGyroJerkMag-mean()	  * Column Number: 79	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroJerkMag signal means recorded
-* Variable Name: fBodyBodyGyroJerkMag-std()	  * Column Number: 80	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroJerkMag signal standard deviations recorded
-* Variable Name: fBodyBodyGyroJerkMag-meanFreq()	  * Column Number: 81	  * Variable Type: Numeric	  * Unit: Normalized and bounded within [-1,1]	  * Description: The mean value of all fBodyBodyGyroJerkMag signal mean frequencies recorded
+* Variable Name: Participant
+  * Column Number: 1
+  * Variable Type: Numeric
+  * Unit: Integer
+  * Description: Participant ID
+* Variable Name: Activity.Code
+  * Column Number: 2
+  * Variable Type: Text
+  * Unit: Text
+  * Description: Activity Description
+* Variable Name: tBodyAcc-mean()-X
+  * Column Number: 3
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis body acceleration means recorded from the accelerometer
+* Variable Name: tBodyAcc-mean()-Y
+  * Column Number: 4
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis body acceleration means recorded from the accelerometer
+* Variable Name: tBodyAcc-mean()-Z
+  * Column Number: 5
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis body acceleration means recorded from the accelerometer
+* Variable Name: tBodyAcc-std()-X
+  * Column Number: 6
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis body acceleration standard deviations recorded from the accelerometer
+* Variable Name: tBodyAcc-std()-Y
+  * Column Number: 7
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis body acceleration standard deviations recorded from the accelerometer
+* Variable Name: tBodyAcc-std()-Z
+  * Column Number: 8
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis body acceleration standard deviations recorded from the accelerometer
+* Variable Name: tGravityAcc-mean()-X
+  * Column Number: 9
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis gravity acceleration means recorded from the accelerometer
+* Variable Name: tGravityAcc-mean()-Y
+  * Column Number: 10
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis gravity acceleration means recorded from the accelerometer
+* Variable Name: tGravityAcc-mean()-Z
+  * Column Number: 11
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis gravity acceleration means recorded from the accelerometer
+* Variable Name: tGravityAcc-std()-X
+  * Column Number: 12
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis gravity acceleration standard deviations recorded from the accelerometer
+* Variable Name: tGravityAcc-std()-Y
+  * Column Number: 13
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis gravity acceleration standard deviations recorded from the accelerometer
+* Variable Name: tGravityAcc-std()-Z
+  * Column Number: 14
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis gravity acceleration standard deviations recorded from the accelerometer
+* Variable Name: tBodyAccJerk-mean()-X
+  * Column Number: 15
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis body jerk signal means recorded
+* Variable Name: tBodyAccJerk-mean()-Y
+  * Column Number: 16
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis body jerk signal means recorded
+* Variable Name: tBodyAccJerk-mean()-Z
+  * Column Number: 17
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis body jerk signal means recorded
+* Variable Name: tBodyAccJerk-std()-X
+  * Column Number: 18
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis body jerk signal standard deviations recorded
+* Variable Name: tBodyAccJerk-std()-Y
+  * Column Number: 19
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis body jerk signal standard deviations recorded
+* Variable Name: tBodyAccJerk-std()-Z
+  * Column Number: 20
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis body jerk signal standard deviations recorded
+* Variable Name: tBodyGyro-mean()-X
+  * Column Number: 21
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis gyro jerk signal means recorded
+* Variable Name: tBodyGyro-mean()-Y
+  * Column Number: 22
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis gyro jerk signal means recorded
+* Variable Name: tBodyGyro-mean()-Z
+  * Column Number: 23
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis gyro jerk signal means recorded
+* Variable Name: tBodyGyro-std()-X
+  * Column Number: 24
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all X-axis gyro jerk signal standard deviations recorded
+* Variable Name: tBodyGyro-std()-Y
+  * Column Number: 25
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Y-axis gyro jerk signal standard deviations recorded
+* Variable Name: tBodyGyro-std()-Z
+  * Column Number: 26
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all Z-axis gyro jerk signal standard deviations recorded
+* Variable Name: tBodyGyroJerk-mean()-X
+  * Column Number: 27
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal means recorded for the X axis
+* Variable Name: tBodyGyroJerk-mean()-Y
+  * Column Number: 28
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal means recorded for the Y axis
+* Variable Name: tBodyGyroJerk-mean()-Z
+  * Column Number: 29
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal means recorded for the Z axis
+* Variable Name: tBodyGyroJerk-std()-X
+  * Column Number: 30
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the X axis
+* Variable Name: tBodyGyroJerk-std()-Y
+  * Column Number: 31
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the Y axis
+* Variable Name: tBodyGyroJerk-std()-Z
+  * Column Number: 32
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerk signal standard deviations recorded for the Z axis
+* Variable Name: tBodyAccMag-mean()
+  * Column Number: 33
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyAccMag signal means recorded
+* Variable Name: tBodyAccMag-std()
+  * Column Number: 34
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyAccMag signal standard deviations recorded
+* Variable Name: tGravityAccMag-mean()
+  * Column Number: 35
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tGravityAccMag signal means recorded
+* Variable Name: tGravityAccMag-std()
+  * Column Number: 36
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tGravityAccMag signal standard deviations recorded
+* Variable Name: tBodyAccJerkMag-mean()
+  * Column Number: 37
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyAccJerkMag signal means recorded
+* Variable Name: tBodyAccJerkMag-std()
+  * Column Number: 38
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyAccJerkMag signal standard deviations recorded
+* Variable Name: tBodyGyroMag-mean()
+  * Column Number: 39
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroMag signal means recorded
+* Variable Name: tBodyGyroMag-std()
+  * Column Number: 40
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroMag signal standard deviations recorded
+* Variable Name: tBodyGyroJerkMag-mean()
+  * Column Number: 41
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerkMag signal means recorded
+* Variable Name: tBodyGyroJerkMag-std()
+  * Column Number: 42
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all tBodyGyroJerkMag signal standard deviations recorded
+* Variable Name: fBodyAcc-mean()-X
+  * Column Number: 43
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal means recorded for the X axis
+* Variable Name: fBodyAcc-mean()-Y
+  * Column Number: 44
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal means recorded for the Y axis
+* Variable Name: fBodyAcc-mean()-Z
+  * Column Number: 45
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal means recorded for the Z axis
+* Variable Name: fBodyAcc-std()-X
+  * Column Number: 46
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the X axis
+* Variable Name: fBodyAcc-std()-Y
+  * Column Number: 47
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the Y axis
+* Variable Name: fBodyAcc-std()-Z
+  * Column Number: 48
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal standard deviations recorded for the Z axis
+* Variable Name: fBodyAcc-meanFreq()-X
+  * Column Number: 49
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the X axis
+* Variable Name: fBodyAcc-meanFreq()-Y
+  * Column Number: 50
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the Y axis
+* Variable Name: fBodyAcc-meanFreq()-Z
+  * Column Number: 51
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAcc signal mean frequencies recorded for the Z axis
+* Variable Name: fBodyAccJerk-mean()-X
+  * Column Number: 52
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal means recorded for the X axis
+* Variable Name: fBodyAccJerk-mean()-Y
+  * Column Number: 53
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal means recorded for the Y axis
+* Variable Name: fBodyAccJerk-mean()-Z
+  * Column Number: 54
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal means recorded for the Z axis
+* Variable Name: fBodyAccJerk-std()-X
+  * Column Number: 55
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the X axis
+* Variable Name: fBodyAccJerk-std()-Y
+  * Column Number: 56
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the Y axis
+* Variable Name: fBodyAccJerk-std()-Z
+  * Column Number: 57
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal standard deviations recorded for the Z axis
+* Variable Name: fBodyAccJerk-meanFreq()-X
+  * Column Number: 58
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the X axis
+* Variable Name: fBodyAccJerk-meanFreq()-Y
+  * Column Number: 59
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the Y axis
+* Variable Name: fBodyAccJerk-meanFreq()-Z
+  * Column Number: 60
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccJerk signal mean frequencies recorded for the Z axis
+* Variable Name: fBodyGyro-mean()-X
+  * Column Number: 61
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal means recorded for the X axis
+* Variable Name: fBodyGyro-mean()-Y
+  * Column Number: 62
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal means recorded for the Y axis
+* Variable Name: fBodyGyro-mean()-Z
+  * Column Number: 63
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal means recorded for the Z axis
+* Variable Name: fBodyGyro-std()-X
+  * Column Number: 64
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the X axis
+* Variable Name: fBodyGyro-std()-Y
+  * Column Number: 65
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the Y axis
+* Variable Name: fBodyGyro-std()-Z
+  * Column Number: 66
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal standard deviations recorded for the Z axis
+* Variable Name: fBodyGyro-meanFreq()-X
+  * Column Number: 67
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the X axis
+* Variable Name: fBodyGyro-meanFreq()-Y
+  * Column Number: 68
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the Y axis
+* Variable Name: fBodyGyro-meanFreq()-Z
+  * Column Number: 69
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyGyro signal mean frequencies recorded for the Z axis
+* Variable Name: fBodyAccMag-mean()
+  * Column Number: 70
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccMag signal means recorded
+* Variable Name: fBodyAccMag-std()
+  * Column Number: 71
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccMag signal standard deviations recorded
+* Variable Name: fBodyAccMag-meanFreq()
+  * Column Number: 72
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyAccMag signal mean frequencies recorded
+* Variable Name: fBodyBodyAccJerkMag-mean()
+  * Column Number: 73
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyAccJerkMag signal means recorded
+* Variable Name: fBodyBodyAccJerkMag-std()
+  * Column Number: 74
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyAccJerkMag signal standard deviations recorded
+* Variable Name: fBodyBodyAccJerkMag-meanFreq()
+  * Column Number: 75
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyAccJerkMag signal mean frequencies recorded
+* Variable Name: fBodyBodyGyroMag-mean()
+  * Column Number: 76
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroMag signal means recorded
+* Variable Name: fBodyBodyGyroMag-std()
+  * Column Number: 77
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroMag signal standard deviations recorded
+* Variable Name: fBodyBodyGyroMag-meanFreq()
+  * Column Number: 78
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroMag signal mean frequencies recorded
+* Variable Name: fBodyBodyGyroJerkMag-mean()
+  * Column Number: 79
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroJerkMag signal means recorded
+* Variable Name: fBodyBodyGyroJerkMag-std()
+  * Column Number: 80
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroJerkMag signal standard deviations recorded
+* Variable Name: fBodyBodyGyroJerkMag-meanFreq()
+  * Column Number: 81
+  * Variable Type: Numeric
+  * Unit: Normalized and bounded within [-1,1]
+  * Description: The mean value of all fBodyBodyGyroJerkMag signal mean frequencies recorded
