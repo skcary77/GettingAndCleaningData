@@ -1,3 +1,10 @@
+This document is outlined as follows:
+* Section 1 includes information on the Study Desgin. 
+  * Section 1.1 explains the raw data (information taken from the orignial "features_info.txt" file).
+  * Section 1.2 explains how the tidy data set was created.
+* Section 2 contains the code book of all variables.
+
+
 #Section 1: Study Design
 ###Section 1.1: Raw Data (copied from original "features_info.txt" document)
 The raw data was collected from a group of 30 participants, who each performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
@@ -57,10 +64,20 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroJerkMean
 
 ###Section 1.2: Tidy Data
-The variables included in the final tidy dataset are only those measures in which the words "mean" or "std" appear in the variable name (case insensitive).
+The original data was separated into a training set and a test set. The tidy dataset combined the training and the test data to create one dataset. The variables included in the final tidy dataset are only those measures in which the words "mean" or "std" appear in the variable name (case insensitive).
 Furthermore, the rather than including all oberservations of each variable, the tidy data has been summarized to show the average reading of each variable 
 for each participant/activity combination.For example, the "tBodyAcc-mean()-X" column in the row where the participant is 1 and the activity is laying, represents the mean tBodyAcc-mean()-X reading
-taken across the entire measurement window for that participant and that activity.
+taken across the entire measurement window for that participant and that activity. The creation of the tidy data set is accomplished using the "run_analysis.R" script. Information regarding the script and how it transforms the raw data is available in the README and within the script itself. The basic steps
+for how the raw data is transformed into tidy data include the following:
+* Step 1: Merges the training and test sets together to form one dataset
+* Step 2: Only keeps variables in which in the word "mean" or "std" is included in the variable name
+* Step 3: Changes the activity code from a numeric value to a more descriptive name
+  * The descriptive names are taken from the "activity_labels.txt" file
+* Step 4: Labels all variables in the database with a decriptive name (see the Code Book for more information)
+  * The variable names are taken from the "features.txt" file. 
+* Step 5: Summarizes the data to show the average reading of each variable for each participant/activity combination (more info in the Code Book).
+* Step 6: Returns the tidy dataset
+
 
 
 
