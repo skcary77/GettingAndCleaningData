@@ -1,9 +1,9 @@
-The script run_analysis.R creates a tidy set with information collected from the accelerometers on a Samsung phone. The tidy has been summarized to show the average reading of each variable 
+The script run_analysis.R creates a tidy set with information collected from the accelerometers on a Samsung phone. The tidy data has been summarized to show the average reading of each variable 
 for each participant/activity combination.For example, the "tBodyAcc-mean()-X" column in the row where the participant is 1 and the activity is "laying", represents the mean tBodyAcc-mean()-X reading
 taken across the entire measurement window for that participant and that activity. Detailed information regarding the raw
-data and what variables were kept are availble in the Code Book. 
+data and what variables were kept is availble in the Code Book. 
 
-For the script to run properly, the following files must be in the User's working directory:
+For the script to run properly the "dplyr" package should be installed. In addition, the following files must be in the User's working directory:
 * subject_train.txt
 * subject_test.txt
 * y_train.txt
@@ -17,6 +17,8 @@ The script transforms the data in the following manner (more deatiled comments a
 * Step 1: Merges the training and test sets together to form one dataset
 * Step 2: Only keeps variables in which in the word "mean" or "std" is included in the variable name
 * Step 3: Changes the activity code from a numeric value to a more descriptive name
+  * The descriptive names are taken from the "activity_labels.txt" file
 * Step 4: Labels all variables in the database with a decriptive name (see the Code Book for more information)
+  * The variable names are taken from the "features.txt" file. 
 * Step 5: Summarizes the data to show the average reading of each variable for each participant/activity combination (more info in the Code Book).
 * Step 6: Returns the tidy dataset
